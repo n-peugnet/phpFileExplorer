@@ -30,12 +30,27 @@ function openDir(element){
 
 function openFile(element){
 	var path = element.dataset.path;
-	var win = window.open('code.php?source='+path, '_blank');
+	var win = window.open(genURL(path), '_blank');
 	if (win) {
 		//Browser has allowed it to be opened
 		win.focus();
 		} else {
 		//Browser has blocked it
 		alert('Please allow popups for this website');
+	}
+}
+
+function genURL(path){
+	var ext = path.split(".").pop().toLowerCase();
+	var isImg = 
+		ext == "png" ||
+		ext == "jpg" ||
+		ext == "gif" ||
+		ext == "jpeg"||
+		ext == "tiff";
+	if (isImg){
+		return '../..'+path;
+	} else {
+		return 'code.php?source='+path;
 	}
 }
