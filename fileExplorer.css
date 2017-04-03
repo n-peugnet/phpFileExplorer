@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'consolas';
+	src: url('consola.ttf');
+}
+
+ul {
+	font-size: 15px;
+    list-style: none;
+    font-family: 'consolas', consolas, monospace;
+}
+
+li ul {
+    padding-left: 16px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #000000;
+    margin-left: 3px;
+}
+
+li.last > details > ul{
+    padding-left: 20px;
+	margin-left: 0;
+	border-left: none;
+}
+
+li {
+    line-height: 18px;
+}
+
+.etiquette {
+	background-color: rgba(255, 255, 255, 0.57);
+    border: none;
+    font-family: 'consolas';
+    font-size: 15px;
+    padding: 0;
+}
+
+button.etiquette:focus {
+	background-color : blue;
+	color: white;
+	outline: none;
+	
+}
+
+details {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    left: -16px;
+}
+
+summary {
+    outline: none;
+}
+
+
+details summary::-webkit-details-marker {
+  background: url(plus.png) center no-repeat;
+    color: transparent;
+}
+
+details[open] > summary::-webkit-details-marker {
+  background: url(minus.png) center no-repeat;
+    color: transparent;
+}
