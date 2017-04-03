@@ -55,11 +55,11 @@ summary {
 
 
 details summary::-webkit-details-marker {
-  background: url(plus.png) center no-repeat;
+  background: url(../img/plus.png) center no-repeat;
     color: transparent;
 }
 
 details[open] > summary::-webkit-details-marker {
-  background: url(minus.png) center no-repeat;
+  background: url(../img/minus.png) center no-repeat;
     color: transparent;
 }

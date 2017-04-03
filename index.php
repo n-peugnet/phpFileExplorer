@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>File Explorer</title>
-	<link rel="stylesheet" href="fileExplorer.css" />
+	<link rel="stylesheet" href="./styles/fileExplorer.css" />
 </head>
 <body>
     <h1>Explorateur</h1>
 	
 	<?php
-	require 'dossier.php';
+	require './includes/dossier.php';
 
 	$rootPath = '../../';
 	$root = new Dossier('root');
@@ -19,6 +19,6 @@
 
 	?>
 
-<script src="fileExplorer.js"></script>
+<script src="./includes/fileExplorer.js"></script>
 </body>
 </html>

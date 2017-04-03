@@ -1,13 +1,7 @@
-<?php
-session_start();
-if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn'])
-	header('location: /intranet/login.php?redirect=explorateur.php');
-?>
 <!DOCTYPE html>
 <html>
 <head>
 <?php 
-	include('../head.php');
 	//ini_set("display_errors",0);error_reporting(0);
 	if(isset($_GET['source']))
 	{
