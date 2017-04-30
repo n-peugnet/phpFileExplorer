@@ -1,6 +1,7 @@
-<?php
-$config = require '../includes/config.php';
-$rootPath = $config->rootPath;
-header('Content-type: image/jpeg');
-readfile($rootPath.'../'.$_GET['source']);
-?>
+	<title>Image - <?= $fileName ?></title>
+	<meta name="Title" content="Image - <?= $fileName ?>"/>
+	<meta name="Description" content="Image <?= $fileName ?>"/>
+</head>
+<body>	
+	<img src="includes/openImg.php?source=<?= $filePath ?>" alt="<?= $fileName ?>" />
+</body>

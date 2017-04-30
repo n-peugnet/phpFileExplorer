@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
 <?php 
 	//ini_set("display_errors",0);error_reporting(0);
 	if(isset($_GET['source']) && isset($_GET['type']))
@@ -15,7 +18,7 @@
 		switch($fileType)
 		{
 			case 'img':{
-				echo "<img src='views/img.php?source=$filePath' alt='$fileName' />";
+				include('views/img.php');
 				break;
 			}
 			case 'text':{
@@ -30,3 +33,4 @@
 	else
 		echo "</head><body><p>Aucun fichier spécifié</p></body><html>";
 ?>
+</html>
