@@ -9,8 +9,8 @@
 	
 	<?php
 	require './includes/dossier.php';
-
-	$rootPath = '../../';
+	$config = require './includes/config.php';
+	$rootPath = $config->rootPath;
 	$root = new Dossier('root');
 
 	$root->listage($rootPath);

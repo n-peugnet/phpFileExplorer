@@ -49,8 +49,8 @@ function genURL(path){
 		ext == "jpeg"||
 		ext == "tiff";
 	if (isImg){
-		return '../..'+path;
+		return 'file.php?source='+path+'&type=img';
 	} else {
-		return 'code.php?source='+path;
+		return 'file.php?source='+path+'&type=text';
 	}
 }

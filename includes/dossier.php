@@ -89,7 +89,7 @@ class Dossier
 		echo '<ul>';
 		foreach ($this->listSubDir as $subDir)
 		{
-			$subPath = $path.'/'.$subDir->name;
+			$subPath = $path.$subDir->name;
 			if (!$subDir->isEmpty())
 			{
 				if ($comptSubDir == $nbSubDir && !$this->hasFiles())
@@ -98,7 +98,7 @@ class Dossier
 					echo '<li>├─';
 				echo'<details'.$openAttribute.'><summary>📁<button class="etiquette" data-path="'.$subPath.'" ondblclick="openDir(this)">'.$subDir->name.'</button></summary>';
 				if ($subDir->hasChild())
-					$subDir->affichage($subPath, $isOpen);
+					$subDir->affichage($subPath.'/', $isOpen);
 				if ($subDir->hasFiles())
 				{
 					$comptFile = 1;
