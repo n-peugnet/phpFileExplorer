@@ -1,6 +1,6 @@
-	<title>Code Source - <?= $nomFichier ?></title>
-	<meta name="Title" content="Code Source - <?= $nomFichier ?>"/>
-	<meta name="Description" content="Code source du programme <?= $nomFichier ?>"/>
+	<title>Code Source - <?= $fileName ?></title>
+	<meta name="Title" content="Code Source - <?= $fileName ?>"/>
+	<meta name="Description" content="Code source du programme <?= $fileName ?>"/>
 </head>
 <body>	
 	<link rel="stylesheet" href="highlight/styles/arduino-light.css">
