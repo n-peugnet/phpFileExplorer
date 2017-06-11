@@ -2,8 +2,7 @@ var classname = document.getElementsByClassName("etiquette");
 
 for (var i = 0; i < classname.length; i++) {
 	classname[i].oncontextmenu = function (event) { 
-		var content = this.firstChild.nodeValue;
-		alert(content);
+		alertName(this);
 		return false //on annule l'affichage du menu contextuel
 	}
 }
@@ -11,13 +10,6 @@ for (var i = 0; i < classname.length; i++) {
 function alertName(element) { 
 	var content = element.firstChild.nodeValue;
 	alert(content);
-	return false //on annule l'affichage du menu contextuel
-}
-
-function alertPath() { 
-	var content = element.firstChild.nodeValue;
-	alert(content);
-	return false //on annule l'affichage du menu contextuel
 }
 
 function openDir(element){
