@@ -3,5 +3,5 @@
 	<meta name="Description" content="Image <?= $fileName ?>"/>
 </head>
 <body>	
-	<img src="includes/openImg.php?source=<?= $filePath ?>" alt="<?= $fileName ?>" />
+	<img src="openImg.php?source=<?= $filePath ?>" alt="<?= $fileName ?>" />
 </body>

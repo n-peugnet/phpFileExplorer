@@ -9,11 +9,10 @@
 	
 	<?php
 	require './includes/dossier.php';
-	$config = require './includes/config.php';
-	$rootPath = $config->rootPath;
+	require './includes/config.php';
 	$root = new Dossier('root');
 
-	$root->listage($rootPath);
+	$root->listage(EXPLORER_ROOT);
 	$root->triAlpha();
 	$root->affichage('', false);
 

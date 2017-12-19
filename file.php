@@ -5,11 +5,10 @@
 	//ini_set("display_errors",0);error_reporting(0);
 	if(isset($_GET['source']) && isset($_GET['type']))
 	{
-		$config = require './includes/config.php';
-		$rootPath = $config->rootPath;
+		require './includes/config.php';
 		$filePath = $_GET['source'];
 		$fileType = $_GET['type'];
-		$fullPath = $rootPath.$filePath;
+		$fullPath = EXPLORER_ROOT.$filePath;
 		$pieces = explode('/', $filePath);
 		$fileName = array_pop($pieces);
 		$pieces = explode('.', $fileName);
